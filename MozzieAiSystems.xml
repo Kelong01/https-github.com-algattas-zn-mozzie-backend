@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MozzieAiSystems</name>
+    </assembly>
+    <members>
+        <member name="T:MozzieAiSystems.Azure.AzureBlobSetings">
+            <summary>
+            Azure Blob Settings
+            </summary>
+        </member>
+        <member name="M:MozzieAiSystems.Azure.AzureBlobStorage.UploadSasAsync(System.String,System.String,System.String)">
+            <summary>
+            Upload file with SAS Token
+            </summary>
+            <param name="inferenceType"></param>
+            <param name="blobName"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MozzieAiSystems.Controllers.AuthController">
+            <summary>
+            认证
+            </summary>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.AuthController.Login(MozzieAiSystems.Dtos.LoginRequest)">
+            <summary>
+            Login
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.CmsController.ReturnHtml(System.String)">
+            <summary>
+            return the html page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.CmsController.GetDengueZikaCases">
+            <summary>
+            Get The Dengue and Zika Case Info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.FileController.UploadFile(System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            上传文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.LocationController.CreateLocation(MozzieAiSystems.Dtos.CreateLocationRequest)">
+            <summary>
+            Report
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.LocationController.SendReportToCertis(MozzieAiSystems.Dtos.CreateLocationRequest)">
+            <summary>
+            发送报告给certis
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.LocationController.GetLocalActivities(MozzieAiSystems.Dtos.GetNearbyReportsRequest)">
+            <summary>
+            Fetch the local activities
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.LocationController.GetNeaDengueClusters">
+            <summary>
+            Get The NEA Dengue clusters
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MozzieAiSystems.Controllers.LocationController.SendTask(MozzieAiSystems.Dtos.SendTaskRequest)">
+            <summary>
+            Send the task to certis, and get the AI response
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.AttachmentModel.FileSize">
+            <summary>
+            单位KB
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.AttachmentModel.AzureBlobAddress">
+            <summary>
+            Azure blob address
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Name">
+            <summary>
+            The mozzie name
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Uuid">
+            <summary>
+            Mobile Unique Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Lng">
+            <summary>
+            longitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Category">
+            <summary>
+            蚊子类型
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.SubCategory">
+            <summary>
+            蚊子分类
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Lat">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.ReportDateTime">
+            <summary>
+            Report Datetime
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.AdditionalInfo">
+            <summary>
+            Additional info
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.CreateLocationRequest.Type">
+            <summary>
+            Type:Adult,Larvae,Egg
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocationFileInput.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocationFileInput.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocationFileInput.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.GetNearbyReportsRequest.Lng">
+            <summary>
+            longitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.GetNearbyReportsRequest.Lat">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.GetNearbyReportsRequest.Days">
+            <summary>
+            Last days
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.Name">
+            <summary>
+            The mozzie name
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.Uuid">
+            <summary>
+            Mobile Unique Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.Lng">
+            <summary>
+            longitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.Lat">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.Address">
+            <summary>
+            The Location address, which is translated by Map provider
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.ReportDateTime">
+            <summary>
+            ReportDateTime
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.LocalActivityListResponse.ReportUserId">
+            <summary>
+            上报者Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.SendTaskRequest.Lng">
+            <summary>
+            longitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Dtos.SendTaskRequest.Lat">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.AlgattasCmsSession.SessionId">
+            <summary>
+            Session Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.AlgattasCmsSession.Udid">
+            <summary>
+            UDID
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.AlgattasCmsSession.Expires">
+            <summary>
+            Expires date
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.AlgattasCmsSession.UpdateDateTime">
+            <summary>
+            Last update datetime
+            </summary>
+        </member>
+        <member name="M:MozzieAiSystems.Models.CompressImage.CompressImages(System.String,System.Int32,System.Int32,System.Double,System.Boolean)">
+            <summary>
+            无损压缩图片
+            </summary>
+            <param name="sFile">原图片地址</param>
+            <param name="percent">缩放比例</param>
+            <param name="flag">压缩质量（数字越小压缩率越高）1-100</param>
+            <param name="size">压缩后图片的最大大小</param>
+            <param name="sfsc">是否是第一次调用</param>
+            <returns></returns>
+        </member>
+        <member name="P:MozzieAiSystems.Models.DengueZikaModel.CurrentDate">
+            <summary>
+            Current DateTime
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Name">
+            <summary>
+            The Mozzie Name
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Uuid">
+            <summary>
+            Mobile Unique Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Lng">
+            <summary>
+            longitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Lat">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.ReportDateTime">
+            <summary>
+            Report Datetime
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Address">
+            <summary>
+            The Location address, which is translated by Map provider
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.AdditionalInfo">
+            <summary>
+            Additional info
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.CreationDateTime">
+            <summary>
+            creation datetime
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Files">
+            <summary>
+            上传的图片
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.ReportUserId">
+            <summary>
+            上报者Id
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.Location.Type">
+            <summary>
+            Type:Adult,Larvae,Egg
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.LocationFile.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.LocationFile.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.LocationFile.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:MozzieAiSystems.Models.LocationFile.LocationId">
+            <summary>
+            位置Id
+            </summary>
+        </member>
+    </members>
+</doc>
